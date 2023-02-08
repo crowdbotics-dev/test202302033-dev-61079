@@ -10,7 +10,7 @@ const Untitled2 = () => {
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><FlatList style={styles.HgDCMxMJ} renderItem={() => <View style={styles.RFjCKQpz}></View>} ItemSeparatorComponent={() => <View style={styles.VbGNEaAY} />} data={[1, 2, 3]} keyExtractor={item => item.toString()}></FlatList></ScrollView>
+    }}><FlatList style={styles.HgDCMxMJ} renderItem={() => <View style={styles.RFjCKQpz}></View>} ItemSeparatorComponent={() => <View style={styles.VbGNEaAY} />} data={[1, 2, 3]} keyExtractor={item => item.toString()}></FlatList><View style={styles.XebbCEzU}></View></ScrollView>
     </SafeAreaView>;
 };
 
@@ -31,6 +31,16 @@ const styles = StyleSheet.create({
   VbGNEaAY: {
     backgroundColor: "#000000",
     height: 1
+  },
+  XebbCEzU: {
+    height: 60,
+    width: 140,
+    backgroundColor: "#E4E4E4",
+    borderRadius: 0,
+    color: "#777777",
+    position: "absolute",
+    left: 23,
+    top: 374
   }
 });
 export default Untitled2;
