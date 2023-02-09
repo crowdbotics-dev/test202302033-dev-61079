@@ -1,16 +1,19 @@
+import { Pressable } from "react-native";
 import { FlatList } from "react-native";
 import { View } from "react-native";
 import React from "react";
 import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
-const Untitled2 = () => {
+const Untitled2 = ({
+  navigation
+}) => {
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
       backgroundColor: '#f0f0f1',
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><FlatList style={styles.HgDCMxMJ} renderItem={() => <View style={styles.RFjCKQpz}></View>} ItemSeparatorComponent={() => <View style={styles.VbGNEaAY} />} data={[1, 2, 3]} keyExtractor={item => item.toString()}></FlatList><View style={styles.XebbCEzU}></View></ScrollView>
+    }}><FlatList style={styles.HgDCMxMJ} renderItem={() => <View style={styles.RFjCKQpz}></View>} ItemSeparatorComponent={() => <View style={styles.VbGNEaAY} />} data={[1, 2, 3]} keyExtractor={item => item.toString()}></FlatList><Pressable onPress={() => navigation.navigation.navigate("undefined", {})}><View style={styles.XebbCEzU}></View></Pressable></ScrollView>
     </SafeAreaView>;
 };
 
