@@ -72,7 +72,7 @@ const otherSlice = createSlice({
   name: "counter",
   initialState: 0,
   reducers: {
-    rest_auth_registration_create() {},
+    // rest_auth_registration_create() {},
   },
   extraReducers: builder => {
     builder
