@@ -15,7 +15,11 @@ const Untitled2 = ({
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><FlatList style={styles.HgDCMxMJ} renderItem={() => <View style={styles.RFjCKQpz}></View>} ItemSeparatorComponent={() => <View style={styles.VbGNEaAY} />} data={[1, 2, 3]} keyExtractor={item => item.toString()}></FlatList><Pressable onPress={() => navigation.navigation.navigate("undefined", {})}><View style={styles.XebbCEzU}></View></Pressable><TextInput style={styles.iWarcvCo} value={Login.username}></TextInput></ScrollView>
+    }}><FlatList style={styles.HgDCMxMJ} renderItem={() => <View style={styles.RFjCKQpz}></View>} ItemSeparatorComponent={() => <View style={styles.VbGNEaAY} />} data={[1, 2, 3]} keyExtractor={item => item.toString()}>
+       </FlatList>
+          <Pressable onPress={() => navigation.navigation.navigate("undefined", {})}><View style={styles.XebbCEzU}></View></Pressable>
+          <TextInput style={styles.iWarcvCo} value={Login.username}>
+        </TextInput></ScrollView>
     </SafeAreaView>;
 };
 
