@@ -1,3 +1,4 @@
+import { TextInput } from "react-native";
 import { Pressable } from "react-native";
 import { FlatList } from "react-native";
 import { View } from "react-native";
@@ -7,13 +8,14 @@ import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
 const Untitled2 = ({
   navigation
 }) => {
+  const Login = useSelector(state => state.Login);
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
       backgroundColor: '#f0f0f1',
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><FlatList style={styles.HgDCMxMJ} renderItem={() => <View style={styles.RFjCKQpz}></View>} ItemSeparatorComponent={() => <View style={styles.VbGNEaAY} />} data={[1, 2, 3]} keyExtractor={item => item.toString()}></FlatList><Pressable onPress={() => navigation.navigation.navigate("undefined", {})}><View style={styles.XebbCEzU}></View></Pressable></ScrollView>
+    }}><FlatList style={styles.HgDCMxMJ} renderItem={() => <View style={styles.RFjCKQpz}></View>} ItemSeparatorComponent={() => <View style={styles.VbGNEaAY} />} data={[1, 2, 3]} keyExtractor={item => item.toString()}></FlatList><Pressable onPress={() => navigation.navigation.navigate("undefined", {})}><View style={styles.XebbCEzU}></View></Pressable><TextInput style={styles.iWarcvCo} value={Login.username}></TextInput></ScrollView>
     </SafeAreaView>;
 };
 
@@ -44,6 +46,15 @@ const styles = StyleSheet.create({
     position: "absolute",
     left: 23,
     top: 374
+  },
+  iWarcvCo: {
+    backgroundColor: "#ffffff",
+    borderColor: "#cccccc",
+    width: 184,
+    height: 41,
+    position: "absolute",
+    left: 43,
+    top: 245
   }
 });
 export default Untitled2;
