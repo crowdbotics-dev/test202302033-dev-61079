@@ -8,8 +8,6 @@ import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
 const Untitled2 = ({
   navigation
 }) => {
-  const AuthToken = useSelector(state => state.AuthToken);
-  const Signup = useSelector(state => state.Signup);
   const Login = useSelector(state => state.Login);
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
