@@ -1,3 +1,4 @@
+import { Text } from "react-native";
 import { FlatList } from "react-native";
 import React from "react";
 import { View, StyleSheet, ScrollView, SafeAreaView } from "react-native";
@@ -28,7 +29,7 @@ const Untitled3 = () => {
       flex: 1
     }}><FlatList style={styles.zNTMtHrb} renderItem={({
         item
-      }) => <View style={styles.MqAwDNdY}></View>} ItemSeparatorComponent={() => <View style={styles.FmoFCptd} />} data={Users} keyExtractor={item => item.id}></FlatList></ScrollView>
+      }) => <View style={styles.MqAwDNdY}><Text style={styles.MVYEgfBz}>{item.title}</Text></View>} ItemSeparatorComponent={() => <View style={styles.FmoFCptd} />} data={Users} keyExtractor={item => item.id}></FlatList></ScrollView>
     </SafeAreaView>;
 };
 
@@ -49,6 +50,13 @@ const styles = StyleSheet.create({
   FmoFCptd: {
     backgroundColor: "#000000",
     height: 1
+  },
+  MVYEgfBz: {
+    width: 100,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0
   }
 });
 export default Untitled3;
