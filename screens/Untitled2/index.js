@@ -1,7 +1,7 @@
 import { TextInput } from "react-native";
 import { Pressable } from "react-native";
 import { FlatList } from "react-native";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 import React from "react";
 import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
@@ -15,7 +15,9 @@ const Untitled2 = ({
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><FlatList style={styles.HgDCMxMJ} renderItem={() => <View style={styles.RFjCKQpz}></View>} ItemSeparatorComponent={() => <View style={styles.VbGNEaAY} />} data={[1, 2, 3]} keyExtractor={item => item.toString()}>
+    }}><FlatList style={styles.HgDCMxMJ} renderItem={({
+        item
+      }) => <View key={item.id} style={styles.RFjCKQpz}><Text>{item.username}</Text></View>} ItemSeparatorComponent={() => <View style={styles.VbGNEaAY} />} data={[1, 2, 3]} keyExtractor={item => item.id}>
        </FlatList>
           <Pressable onPress={() => navigation.navigation.navigate("undefined", {})}><View style={styles.XebbCEzU}></View></Pressable>
           <TextInput style={styles.iWarcvCo} value={Login.username}>
