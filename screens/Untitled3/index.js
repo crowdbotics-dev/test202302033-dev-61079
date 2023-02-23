@@ -28,7 +28,7 @@ const Untitled3 = () => {
       flex: 1
     }}><FlatList style={styles.zNTMtHrb} renderItem={({
         item
-      }) => <View style={styles.MqAwDNdY}></View>} ItemSeparatorComponent={() => <View style={styles.FmoFCptd} />} data={[1, 2, 3]} keyExtractor={item => item.toString()}></FlatList></ScrollView>
+      }) => <View style={styles.MqAwDNdY}></View>} ItemSeparatorComponent={() => <View style={styles.FmoFCptd} />} data={Users} keyExtractor={item => item.id}></FlatList></ScrollView>
     </SafeAreaView>;
 };
 
