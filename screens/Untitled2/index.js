@@ -8,6 +8,7 @@ import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
 const Untitled2 = ({
   navigation
 }) => {
+  const Signups = useSelector(state => state.Signups);
   const Login = useSelector(state => state.Login);
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
@@ -17,7 +18,7 @@ const Untitled2 = ({
       flex: 1
     }}><FlatList style={styles.HgDCMxMJ} renderItem={({
         item
-      }) => <View key={item.id} style={styles.RFjCKQpz}><Text>{item.username}</Text></View>} ItemSeparatorComponent={() => <View style={styles.VbGNEaAY} />} data={[1, 2, 3]} keyExtractor={item => item.id}>
+      }) => <View key={item.username} style={styles.RFjCKQpz}><Text>{item.username}</Text></View>} ItemSeparatorComponent={() => <View style={styles.VbGNEaAY} />} data={Signups} keyExtractor={item => item.username}>
        </FlatList>
           <Pressable onPress={() => navigation.navigation.navigate("undefined", {})}><View style={styles.XebbCEzU}></View></Pressable>
           <TextInput style={styles.iWarcvCo} value={Login.username}>
