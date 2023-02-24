@@ -26,6 +26,7 @@ const Untitled2 = ({
     </SafeAreaView>;
 };
 
+const a = 1;
 const styles = StyleSheet.create({
   safeArea: {
     height: '100%'
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
     color: "#777777",
     position: "absolute",
     left: 23,
-    top: 374
+    top: 373
   },
   iWarcvCo: {
     backgroundColor: "#ffffff",
