@@ -1,3 +1,6 @@
+import { slice } from "./sliceModels.js";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { TextInput } from "react-native";
 import { Pressable } from "react-native";
 import { FlatList } from "react-native";
@@ -8,6 +11,10 @@ import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
 const Untitled2 = ({
   navigation
 }) => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(slice.actions.api_v1_signup_create());
+  }, []);
   const Signups = useSelector(state => state.Signups);
   const Login = useSelector(state => state.Login);
   return <SafeAreaView style={styles.safeArea}>
