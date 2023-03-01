@@ -11,6 +11,7 @@ const Untitled5 = () => {
       "aa": "aa",
       "p": "v"
     }));
+    dispatch(slice.actions.api_v1_login_create());
   }, []);
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
