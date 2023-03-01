@@ -7,7 +7,10 @@ import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
 const Untitled5 = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(slice.actions.api_v1_signup_create());
+    dispatch(slice.actions.api_v1_signup_create({
+      "aa": "aa",
+      "p": "v"
+    }));
   }, []);
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
