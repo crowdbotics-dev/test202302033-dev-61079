@@ -34,4 +34,3 @@ pipenv = "*"
 django-import-export = "*"
 drf-spectacular = "~=0.25.1"
 cb-django-articles = {editable = true, path = "./modules/django_articles"}
-cb-camera = {editable = true, path = "./modules/camera"}
