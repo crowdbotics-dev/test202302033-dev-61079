@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   }
 });
 export default {
-  title: "App Menu33",
+  title: "App MenuDefault",
   copy: "Routes available",
   styles: styles
 };
