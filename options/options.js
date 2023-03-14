@@ -1,5 +1,5 @@
 export const globalOptions = {
-  "name": "test202302033-dev-61079",
+  "name": "HOLAAA",
   "url": "https://test202302033-dev-61079.botics.co",
   "api": "https://test202302033-dev-61079.botics.co/api/v1"
 };
