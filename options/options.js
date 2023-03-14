@@ -5,7 +5,7 @@ export const globalOptions = {
 };
 export const modulesOptions = {
   "@modules/app-menu": {
-    "title": "AppMenuEditado",
+    "title": "AppMenuEdita",
     "copy": "Routes available",
     "styles": styles
   }
